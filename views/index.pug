@@ -3,17 +3,21 @@ extends layout
 block content
   h1= title
   p Welcome to #{title} with user registration/authorization
-  p Featured: 
-  ul
-    li mongoose + mongoDB
-    li passport.js + local strategy
-    li bcryptjs
-    li nconf
   p Routes:
-  ul
-    li
-      a(href="/users") Users
-    li
-     a(href="/login") Login
-    li
+    span 
+      a(href="/users") Users 
+      span &nbsp;&nbsp;&nbsp;
+    span
+      a(href="/login") Login
+      span &nbsp;&nbsp;&nbsp;
+    span
       a(href="/register") Register
+      span &nbsp;&nbsp;&nbsp;
+  
+  h2 Featured: 
+  ul
+    li MongoDB with mongoose 
+    li passport.js with Local Strategy
+    li bcryptjs
+    li pug
+    li nconf
